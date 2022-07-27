@@ -1,0 +1,389 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*  */
+
+
+
+
+
+
+
+.logo {
+    
+    position: absolute;
+    left: 40px;
+    
+    
+}
+
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    left: 200px;
+  
+}
+
+.links {
+    display: flex;
+    position: absolute;
+    left: 35vh;
+    top: 20px;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    color: white;
+   
+}
+
+
+.container .content ul  {
+    list-style-type:circle;
+    margin: 1px 0 0 0;
+    padding: 0 3px;
+    
+}
+
+.container .content ul li {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container .content ul li:hover {
+    text-decoration: underline;
+}
+
+.container .content {
+    display: none;
+}
+
+.container.active .content{
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    margin: 7px 0 0 0;
+    text-align: center;
+
+    
+    transition: 0.5s;
+   
+}
+
+.container .label {
+    font-size: large;
+    font-weight: bold;
+    
+  
+}
+
+
+
+.container {
+    display:  inline-block;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+.container .label::before {
+    content: url("images/icon-arrow-light.svg");
+    position: relative;
+    left: 12vh;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+ #company::before {
+    content: url("images/icon-arrow-light.svg");
+    position: relative;
+    left: 13vh;
+    cursor: pointer;
+}
+
+.rightNavbar {
+    position: relative;
+    left: 160vh;
+    bottom: 11vh;
+    width: fit-content;
+  
+    
+}
+
+
+
+.login {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: "Ubuntu";
+}
+
+.signUp {
+    color:  hsl(356, 100%, 66%);
+    font-size: 22px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 40px;
+    margin-left: 15px;
+    border: none;
+    font-family: "Ubuntu";
+}
+
+.header {
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    height: 400px;
+    border-bottom-left-radius: 100px
+}
+
+.header .middleElements  {
+    display: grid;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 10px
+}
+
+.header .middleElements .mainTitle {
+    font-family: "Overpass";
+    font-size: 50px;
+    font-weight: 800;
+
+}
+.header .middleElements .subTitle{
+    font-family: "Overpass";
+    position: relative;
+    bottom: 50px
+}
+
+
+
+.buttons  {
+    display: flex;
+    
+    width: fit-content;
+    gap: 10px;
+    position: relative;
+    left: 30%;
+    bottom: 40px
+}
+
+.buttons button {
+    color:  white;
+    font-size: 18px;
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 15px;
+    border: none;
+    background-color: hsl(356, 100%, 66%);
+    font-family: "Ubuntu";
+    position: relative;
+    left: 115px;
+    top: 10px;
+    cursor: pointer
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    transition: ease 0.3s;
+}
+
+.signUp:hover {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    transition: ease 0.3s;
+}
+
+button{
+    cursor: pointer;
+}
+
+.pageTitle {
+    text-align: center;
+    color:  hsl(208, 49%, 24%);
+    font-size: 40px;
+    font-family: "Overpass";
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.paragraphTitle_1, .paragraphTitle_2 { 
+    color:  hsl(208, 49%, 24%);
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.paragraph_1, .paragraph_2 {
+    font-family: "Overpass";
+    font-weight: 300;
+}
+
+.information {
+    width: 550px;
+    margin-left: 90px;
+    font-family: "Overpass";
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.analysisImg {
+    position: relative;
+    left: 110vh;
+    bottom: 101vh;
+    width: 1000px;
+    height: 900px;
+    overflow: hidden;
+    /* t */
+}
+
+.pageContent {
+    position: relative;
+    top: 100px;
+}
+
+.smallParagraph {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    bottom: 80vh;
+    background-color: hsl(237, 23%, 32%);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.phoneImg {
+    position: relative;
+    bottom: 80px;
+    left: 100px
+}
+
+
+
+.infoBox {
+    width: 600px;
+    letter-spacing: 1px;
+    font-family: "Overpass";
+    position: relative;
+    bottom: 75vh;
+    left: 110vh;
+    color: white
+}
+
+.infoboxLabel {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.infobx {
+    font-size: 18px;
+}
+
+.paragraphTitle_3, .paragraphTitle_4 { 
+    color:  hsl(208, 49%, 24%);
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.paragraph_3, .paragraph_4 {
+    font-family: "Overpass";
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+.information_2 {
+    width: 550px;
+    position: relative;
+    left: 110vh;
+    bottom: 50vh;
+    font-family: "Overpass";
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.laptopImg {
+    /* position: relative;
+    bottom: 80px;
+    right: 150vh; */
+    position: absolute;
+    bottom: -150px;
+    right: 100vh;
+    transform: scale(1);
+
+}
+
+.contactInfo {
+    width: 100%;
+    background-color: hsl(240, 10%, 16%);
+    height: 400px;
+    color: white;
+}
+
+.footerLogo {
+    position: relative;
+    left: 300px;
+    top: 60px;
+}
+
+.contactInfo ul li {
+    padding: 5px;
+}
+
+.lists {
+    position: relative;
+    left: 90vh
+}
+
+.listTitle {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    margin-bottom: 40px;
+}
+
+.listItem {
+    font-family: "Ubuntu";
+    margin-bottom: 25px;
+    cursor: pointer;
+    
+}
+
+.listItem:hover {
+    text-decoration: underline;
+}
+
+#companyList {
+    position: relative;
+    left: 120vh;
+    bottom: 39.8vh;
+}
+
+#connectList {
+    position: relative;
+    left: 150vh;
+    bottom: 73vh;
+    color: white;
+}
